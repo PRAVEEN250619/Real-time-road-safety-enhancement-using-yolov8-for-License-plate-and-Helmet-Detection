@@ -3,7 +3,7 @@ Motorcycle Accidents have been rapidly growing throughout the years in many coun
 
 This system proposes an automated system for detecting motorcyclists who do not wear a helmet and a system for retrieving motorcycle number plates.So, our model detects the helmet of the rider. If the two-wheeler rider does not wear the helmet, it detects the number plate of the vehicle.To detect the objects, this deep learning algorithm uses CNN (Convolutional Neural Network) that recognizes specific objects in videos, live images or feeds.
 
-This project is a Streamlit-based application for detecting helmets, bikes, and recognizing number plates in a video stream. It uses the YOLOv3 object detection model for detecting bikes and helmets and a CNN model for helmet detection. Additionally, it recognizes number plates in real-time video.
+This project is a Streamlit-based application for detecting helmets, bikes, and recognizing number plates in a video stream. It uses the YOLOv8 object detection model for detecting bikes and helmets and a CNN model for helmet detection. Additionally, it recognizes number plates in real-time video.
 
 # Installation
 1. Clone the Repository
@@ -16,7 +16,7 @@ This project is a Streamlit-based application for detecting helmets, bikes, and 
         pip install -r requirements.txt
 5. Download YOLO Weights and Configuration :
    
-    Download the YOLOv3 weights (yolov3-custom_7000.weights) and configuration (yolov3-custom.cfg) files. You can obtain these files from your YOLOv3 training or a pre-trained YOLOv3           model. Place these files in the project directory.
+    Download the YOLOv8 weights (yolov8-custom_7000.weights) and configuration (yolov8-custom.cfg) files. You can obtain these files from your YOLOv8 training or a pre-trained YOLOv8 model. Place these files in the project directory.
 7. Download Helmet Detection Model :
    
     Download the helmet detection model (helmet-nonhelmet_cnn.h5) and place it in the project directory. You can train this model using your dataset or use a pre-trained one.
@@ -46,8 +46,8 @@ This project is a Streamlit-based application for detecting helmets, bikes, and 
 
 * source.py: The main Streamlit app code for helmet, bike, and number plate detection and recognition.
 * requirements.txt: A list of required Python packages and their versions.
-* yolov3-custom_7000.weights: YOLOv3 custom-trained weights for object detection.
-* yolov3-custom.cfg: YOLOv3 custom model configuration file.
+* yolov8-custom_7000.weights: YOLOv8 custom-trained weights for object detection.
+* yolov8-custom.cfg: YOLOv8 custom model configuration file.
 * helmet-nonhelmet_cnn.h5: Helmet detection CNN model weights.
   # ScreenShots
   ![Screenshot (235)](https://github.com/user-attachments/assets/acffefa7-0ca4-4312-8d2e-e8b7b91d4eb5)
@@ -55,10 +55,7 @@ This project is a Streamlit-based application for detecting helmets, bikes, and 
   ![Screenshot (236)](https://github.com/user-attachments/assets/a092f2ca-1f99-4637-8da9-c8223d205251)
 
 # Acknowledgements
-* This project uses YOLOv3 for object detection. You can find more information about YOLOv3 here.
-
-      https://pjreddie.com/darknet/yolo/
-  
+* This project uses YOLOv8 for object detection. You can find more information about YOLOv8 here.
 * The helmet detection model is a CNN-based model used for detecting helmets on bike riders.Number plate recognition is performed in real-time to identify and display number plates.
 * Special thanks to the Streamlit community for creating an easy-to-use web framework for data science applications. Visit Streamlit's official website for more information.
   
